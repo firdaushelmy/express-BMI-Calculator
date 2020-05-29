@@ -7,16 +7,16 @@
   </head>
   <body>
     <h1>BMI Calculator</h1>
-    <form method="post">
+    <form action="/bmi" method="post">
       <input type="number" name="weight" placeholder="Weight" />
-      <select>
-        <option value="Kilogram (kg)"> kg </option>
-        <option value="Pounds (lb)"> lb </option>
+      <select name="weightMeasurement">
+        <option value="kg"> kg </option>
+        <option value="lb"> lb </option>
       </select>
       <input type="number" name="height" placeholder="Height" />
-      <select>
-        <option value="centimetre (cm)"> cm </option>
-        <option value="Foot (ft)"> ft </option>
+      <select name="heightMeasurement">
+        <option value="cm"> cm </option>
+        <option value="ft"> ft </option>
       </select>
       <button type="submit" name="submit">Calculate BMI</button>
     </form>
