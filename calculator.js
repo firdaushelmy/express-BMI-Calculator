@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // bmi
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index.html');
+  res.sendFile(__dirname + '/index');
 });
 
 app.post('/', function (req, res) {
@@ -50,7 +50,7 @@ app.post('/', function (req, res) {
   }
 })
 
-
-app.listen(3000, function (req, res) {
-  console.log('server 3000 is running');
+const port = process.env.PORT || 3000
+app.listen(port, function (req, res) {
+  console.log(`server ${port} is running`);
 });
