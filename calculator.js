@@ -6,7 +6,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 // bmi
 app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/index');
+  res.sendFile(__dirname + '/index.html');
 });
 
 app.post('/', function (req, res) {
